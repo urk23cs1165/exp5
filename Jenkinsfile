@@ -3,7 +3,7 @@ pipeline {
 
     environment {
         IMAGE_NAME = "myapp"
-        DOCKER_HUB_USER = "<your-dockerhub-username>"
+        DOCKER_HUB_USER = "poorans"
     }
 
     stages {
@@ -11,7 +11,7 @@ pipeline {
         stage('Clone') {
             steps {
                 git branch: 'main',
-                url: 'https://github.com/<username>/<repo>.git'
+                url: 'https://github.com/urk23cs1165/exp5'
             }
         }
 
